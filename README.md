@@ -1,5 +1,7 @@
 # Stathat read library
 
+[![Build Status](https://travis-ci.org/Grummfy/stathat-read.svg?branch=master)](https://travis-ci.org/Grummfy/stathat-read)
+
 [Stathat](https://www.stathat.com/) is SaaS stat tracking tool.
 This small library is here to help read stats from it with PHP.
 
