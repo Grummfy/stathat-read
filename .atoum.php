@@ -34,5 +34,12 @@ $telemetry->addWriter(new std\out());
 $telemetry->readProjectNameFromComposerJson(__DIR__ . '/composer.json');
 $runner->addReport($telemetry);
 
+if (getenv('TRAVIS'))
+{
+	$travisReport = new reports\realtime\cli\travis();
+	$travisReport->addWriter(new std\out());
+	$runner->addReport($travisReport);
+}
+
 // logo, because I like it!
 $report->addField(new logo());
