@@ -1,0 +1,33 @@
+{
+    "name": "grummfy/stathat-read",
+    "description": "Library that helps reading stats from stathat",
+    "keywords": ["stathat", "stats"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Grummfy",
+            "email": "me@grummfy.be"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "suggest": {
+        "guzzlehttp/guzzle": "To get the default adapter to request the stats."
+    },
+    "require-dev": {
+        "atoum/atoum": "^3.1",
+        "atoum/reports-extension": "dev-master",
+        "atoum/stubs": "^2.5",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Grummfy\\Stathat\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
