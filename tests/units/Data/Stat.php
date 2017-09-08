@@ -25,5 +25,7 @@ class Stat extends \atoum
 				$this->integer($object->getTime())->isEqualTo(6),
 				$this->object($object)->isInstanceOfTestedClass()
 			);
+
+		$this->object($this->testedInstance)->isInstanceOf(\JsonSerializable::class);
 	}
 }

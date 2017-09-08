@@ -2,7 +2,7 @@
 
 namespace Grummfy\Stathat\Data;
 
-class Stat
+class Stat implements \JsonSerializable
 {
 	/**
 	 * @var int
@@ -33,5 +33,13 @@ class Stat
 	public function getValue(): float
 	{
 		return $this->_value;
+	}
+
+	public function jsonSerialize()
+	{
+		return [
+			'time' => $this->_time,
+			'value' => $this->_value,
+		];
 	}
 }
